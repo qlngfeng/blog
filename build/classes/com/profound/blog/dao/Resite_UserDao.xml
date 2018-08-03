@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.profound.blog.bean.Iresite_user">
+	<insert id="insert"
+		parameterType="com.profound.blog.bean.Reuser">
+		INSERT INTO
+		user_info(username,password,phone,question,questionresult,email,date,sex)
+		VALUES(#{username},
+		#{password},#{phone},#{question},#{questionresult},#{email},#{date},#{sex})
+	</insert>
+	<select id="select" parameterType="String"
+		resultType="com.profound.blog.bean.Reuser">
+		select * from user_info where username=#{username}
+	</select>
+</mapper>

@@ -1,0 +1,97 @@
+*{margin: 0;
+padding: 0;}
+.suibi_box
+{
+    width: 850px;
+    border-radius: 15px;
+    -moz-outline-radius: 15px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    position: relative;
+    /*left: 150px;*/
+    left: 30px;
+    top:25px;
+    float: left;
+    background-color: rgb(255,255,255);
+}
+#suibi_title
+{
+    font: 25px Helvetica Neue,Helvetica,PingFang SC,\5FAE\8F6F\96C5\9ED1,Tahoma,Arial,sans-serif;
+    position: relative;
+    top:5px;
+    left:10px;
+    text-align: center;
+}
+  
+.message li
+{
+    float: left;
+    position: relative;
+    left:20px;
+    margin-left: 15px;
+}
+hr{
+    border: 2px;
+    color: rgba(0,0,0,1);
+    width:800px;
+    margin:5px auto;
+}
+#zhengwen
+{
+    text-indent:2em;
+    font: 25px Helvetica Neue,Helvetica,PingFang SC,\5FAE\8F6F\96C5\9ED1,Tahoma,Arial,sans-serif;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+
+}
+.tools
+{
+    width: 380px;
+    height: 50px;
+
+    display: block;
+}
+
+.tools li
+{
+    height: 50px;
+    float: left;
+    position: relative;
+    left: 5px;
+    margin-left: 5px;
+    padding-left: 5px;
+
+}
+
+.tools li img
+{
+    width: 50px;
+    height: 50px;
+}
+
+.cebianlan
+{
+    width: 400px;
+    height: 1200px;
+    background-color: rgba(0,255,255,0.5);
+    float: left;
+    position: relative;
+    left: 175px;
+    top:25px;   
+    margin-left: 50xp;
+    border-radius: 15px;
+    -moz-outline-radius: 15px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    font-size: 20px;
+    padding: 0 auto;
+    
+}
+.cebianlan img
+{
+    width:118px;
+    height: 118px;  
+    border-radius: 100px;
+    margin-top: 40px;
+    margin-left: 141px; 
+
+}

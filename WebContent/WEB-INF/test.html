@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>layui</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/layui.css"  media="all">
+  <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+</head>
+<body>
+<div style="margin-bottom: 5px;">
+
+<!-- 示例-970 -->
+<ins class="adsbygoogle" style="display:inline-block;width:970px;height:90px" data-ad-client="ca-pub-6111334333458862" data-ad-slot="3820120620"></ins>
+
+</div>
+<table class="layui-hide" id="test"></table>
+
+<script src="./layui.js" charset="utf-8"></script>
+<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+
+<script>
+
+layui.use(['form','layer','table'], function(){
+          var table = layui.table
+          ,form = layui.form,$=layui.$;
+          table.render({
+            elem: '#test'  //绑定table id
+            ,url:'/bloguser.action'  //数据请求路径
+            ,cellMinWidth: 80
+            ,cols: [[
+                  {field:'blog_id', width:200, title: 'ID', sort: true}
+                  ,{field:'username', width:180, title: '作者'}
+                  ,{field:'releaseDate', width:120, title: '发表时间', sort: true}
+                 ,{field:'blogtype', width:100, title: '类型'}
+                  ,{field:'blogtitle', width:100, title: '标题', minWidth: 100} //minWidth：局部定义当前单元格的最小宽度，layui 2.2.1 新增
+                  ,{field:'clickHit', width:100, title: '点击数', sort: true}
+                  ,{fixed: 'right',title: '操作', width:180,      align:'center', toolbar: '#toolBar'}//一个工具栏  具体请查看layui官网
+            ]]
+            ,page: true   //开启分页
+            ,limit:10   //默认十条数据一页
+            ,limits:[10,20,30,50]  //数据分页条
+            ,id: 'testReload'
+          });
+});
+</script>
+  </body>
+
+</body>
+</html>
